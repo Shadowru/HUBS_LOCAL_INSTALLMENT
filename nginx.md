@@ -1,4 +1,4 @@
-NGINX config
+**NGINX config**
 ```
 server {
         root /var/www/html/hubs/admin/dist;
