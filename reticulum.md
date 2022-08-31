@@ -1,5 +1,8 @@
 # RETICULUM
 
+## ENV setup
+[ERLANG/ELIXIR](./env.md)
+
 ## RETICULUM setup
 mix deps.get  
 mix ecto.create
