@@ -15,10 +15,10 @@ MIX_ENV=prod mix release
 ## RETICULUM LAUNCH
 
 MIX_ENV=prod mix compile  
-PORT=4000 MIX_ENV=prod elixir --erl "-detached" -S mix phx.server
+PORT=4000 MIX_ENV=prod SMTP_PASSWORD=*** elixir --erl "-detached" -S mix phx.server
 
 **Логов нет**, для отладки - запускать
-PORT=4000 MIX_ENV=prod elixir -S mix phx.server
+PORT=4000 MIX_ENV=prod SMTP_PASSWORD=*** elixir -S mix phx.server
 
 Перед запуском убивать все что висит на 4000 порту 
 

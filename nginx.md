@@ -1,4 +1,10 @@
 **NGINX config**
+nginx.conf/секция http
+
+```
+client_max_body_size 100M;
+```
+
 ```
 server {
         root /var/www/html/hubs/admin/dist;
