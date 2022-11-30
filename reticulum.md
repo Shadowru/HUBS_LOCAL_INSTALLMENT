@@ -12,6 +12,13 @@ mix ecto.create
 mix deps.get  
 MIX_ENV=prod mix release
 
+##DB setup
+You may need to change the password for the postgres role to match the password configured config .exs.
+From within the psql shell, enter ALTER USER postgres WITH PASSWORD 'postgres';
+ALTER USER postgres WITH SUPERUSER
+
+If you receive an error that the ret_dev database does not exist, (using psql again) enter create database ret_dev;
+
 ## RETICULUM LAUNCH
 
 MIX_ENV=prod mix compile  
