@@ -21,7 +21,7 @@ asdf install erlang 23.3
 ```
 Bunch errors - install addiction packages - 'autoconfig', 'make', etc ...
 ```
-asdf install elixir 23.3
+asdf install elixir 1.12.3
 
 asdf current
 
